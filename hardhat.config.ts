@@ -28,7 +28,7 @@ const chainIds = {
 
 export const VERBOSE = false;
 
-const mnemonic = process.env.MNEMONIC || '';
+const mnemonic = process.env.MNEMONIC || 'interview questions are my favorite';
 if (!mnemonic) {
   throw new Error("Please set your MNEMONIC in a .env file");
 }
@@ -36,7 +36,7 @@ if (!mnemonic) {
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || '';
 const INFURA_API_KEY = process.env.INFURA_API_KEY || '';
 const ALCHEMY_API_URL = process.env.ALCHEMY_API_URL || '';
-const ETH_PRIVATE_KEY = process.env.ETH_PRIVATE_KEY || '';
+const ETH_PRIVATE_KEY = process.env.ETH_PRIVATE_KEY || '5450ef8cc4b91ed61a8c393d46e32f9928becda6a2abc8a354b0d60a1abda734';
 
 export class HardhatRuntimeEnvironmentField {
   constructor() { null }
